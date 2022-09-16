@@ -30,7 +30,7 @@ scenarios:
     - label: Login
       actions:
       - resizeWindow(1680,939)
-      - go(http://192.168.64.18:8888/bank/login)
+      - go(http://192.168.64.16:8888/bank/login)
       - clickByCSS(form)
       - clickByID(username)
       - typeByID(username): "jsmith@demo.io"
@@ -59,7 +59,7 @@ scenarios:
       User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36'
       Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
     variables:
-      BASE_URL: http://192.168.64.18:8888
+      BASE_URL: http://192.168.64.16:8888
     requests:
       - transaction: Login
         force-parent-sample: false
